@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vivi Store </title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/1.png" width="150px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="">Home</a></li>
+                    <li> <a href="">Shop</a></li>
+                    <li> <a href="">About</a></li>
+                    <li> <a href="">Customize</a></li>
+                    <li> <a href="">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">       
+        </div>
+        <div class="header">
+        <div class="row">
+            <div class="col-2">
+                <h1> A Portal to Whimsical Dresses!</h1>
+                <p> Inspired by the fairytales and princess stories with a touch of magic <br> Now customize your own dresses</p>
+                <a href="" class="btn"> Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/dress.png">
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <!--------- Featured stuff --------->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/cat2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/cat1.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/cat3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------- Featured stuff --------->
+    <div class="small-container">
+        <h2 class="title"> Featured Dresses</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/prod1.jpeg">
+                <h4>Sea Green Butterfly</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p> $850.00 </p>
+            </div>
+            <div class="col-4">
+                <img src="images/prod2.jpg">
+                <h4>Starry Glitter Blue</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p> $800.00 </p>
+            </div>
+            <div class="col-4">
+                <img src="images/prod4.jpg">
+                <h4>Elegant Belle Yellow</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p> $900.00 </p>
+            </div>
+            <div class="col-4">
+                <img src="images/prod3.jpg">
+                <h4>Midnight Blue Cherry</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p> $750.00 </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if (MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    </body>
+</html>
